@@ -29,11 +29,7 @@ public class Point implements Serializable, Comparable <Point>{
    * Z point position. 
    */
   private double z;
-  
-  /**
-   * Rectangle the point is associated with. 
-   */
-  private Rectangle rec;
+
   /**
    * Pixel's color. 
    */
@@ -55,7 +51,6 @@ public class Point implements Serializable, Comparable <Point>{
 	  x= p.getX();
 	  y= p.getY();
 	  z= p.getZ();
-	  rec= p.getRectangle();
 	  color= p.getColor();
   }
   
@@ -125,7 +120,6 @@ public class Point implements Serializable, Comparable <Point>{
     y = yy;
     z = zz;
     color = col;
-    rec = r;
     
   }
 
@@ -180,17 +174,6 @@ public class Point implements Serializable, Comparable <Point>{
   
   public double getZ(){
     return z;
-  }
-  
-  /**
-     * Returns the rectangle a point is associated with.
-     * 
-     * @return returns a rectangle, a custom object we created.
-     * 
-     */
-  
-  public Rectangle getRectangle(){
-    return rec;
   }
   
   /**

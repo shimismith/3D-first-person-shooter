@@ -7,6 +7,7 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.Arrays;
 
 import javax.imageio.ImageIO;
@@ -33,10 +34,10 @@ private static JFrame frame;
   static BufferedImage image;
   private static BufferedImage reticle;
   private static BufferedImage hands;
-  static Player player;
-  static Player enemy;
+  public static Player player;
+  private static Player enemy;
   /**Rectangle that represents the enemy.*/
-  static Rectangle er;
+  protected static Rectangle er;
   private static Render ren;
   public static LevelBuilder lb;
   static Server server;

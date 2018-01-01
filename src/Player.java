@@ -205,6 +205,5 @@ public class Player implements Serializable{
    setZ(getZ() + (velF*Math.cos(totalRotation) - (velH*Math.sin(totalRotation))));
     rotation+= angularVel;
   }
-
   
 }
